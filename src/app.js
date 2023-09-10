@@ -21,6 +21,12 @@ app.get('/testingshitpou', (req, res) => {
   });
 });
 
+app.get('/api/test', (req, res) => {
+  res.json({
+    message: '🦄',
+  });
+});
+
 app.use('/api/v1', api);
 
 app.use(middlewares.notFound);
